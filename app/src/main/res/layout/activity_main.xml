@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/speed_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/border_shape"
+        android:fontFamily="@font/allerta"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="@string/unit_converter"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="1sp"
+        android:layout_marginEnd="1sp"
+        android:layout_marginBottom="248dp"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18sp">
+
+            <ImageView
+                android:id="@+id/areaView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/units_background"
+                android:padding="6sp"
+                android:src="@drawable/area" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/area"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18sp">
+
+            <ImageView
+                android:id="@+id/volumeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/units_background"
+                android:padding="5sp"
+                android:src="@drawable/volume" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/volume"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18sp">
+
+            <ImageView
+                android:id="@+id/weightView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/units_background"
+                android:padding="5sp"
+                android:src="@drawable/weigth" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/weight"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="1sp"
+        android:layout_marginEnd="1sp"
+        android:layout_marginBottom="410dp"
+        android:padding="10sp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18sp">
+
+            <ImageView
+                android:id="@+id/speedView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/units_background"
+                android:padding="6sp"
+                android:src="@drawable/sped" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/speed"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18sp">
+
+            <ImageView
+                android:id="@+id/lengthView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/units_background"
+                android:padding="5sp"
+                android:src="@drawable/length" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="LENGTH"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18sp">
+
+            <ImageView
+                android:id="@+id/tempView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/units_background"
+                android:padding="5sp"
+                android:src="@drawable/temprature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="TEMP."
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

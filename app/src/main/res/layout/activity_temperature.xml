@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/temp_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Temperature">
+
+    <FrameLayout
+        android:id="@+id/temp_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <FrameLayout
+
+        android:id="@+id/temp_text_frameLayout"
+        android:layout_width="241dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/temp_frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/temp_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="290dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/alata"
+        android:gravity=""
+        android:text="@string/temperature_converter"
+        android:textColor="#A21F1F"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/temp_text_frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <Spinner
+        android:id="@+id/temp_spinner"
+        android:layout_width="83dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/spinner_back"
+        app:layout_constraintBottom_toBottomOf="@+id/temp_text_frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/temp_text_frameLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="241dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/alata"
+        android:gravity="center"
+        android:text="@string/unit_convert_to_select"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/temp_spinner2"
+        android:layout_width="83dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/spinner_back"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/temp_result"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/key_background"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/temp_frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
